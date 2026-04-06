@@ -36,23 +36,28 @@ This script allows you to run Stardew Valley with mods while using Proton, inclu
 
 Edit these variables in the script before running:
 
-# Proton executable path
-  ```
+### Proton executable path
+  ```bash
 PROTON="$HOME/.local/share/Steam/steamapps/common/Proton 10.0/proton"
   ```
 
-# Game folder
-  ```
+### Game folder
+  ```bash
 GAME_DIR="$HOME/.local/share/Steam/steamapps/common/Stardew Valley"
   ```
 
-# GPU (for AMD users, optional)
+### GPU (for AMD users, optional)
 export DRI_PRIME=1
 
-# Explaination
-PROTON → replace with the Proton version you want to use.
-GAME_DIR → path to your Stardew Valley folder.
-DRI_PRIME=1 → optional; enables AMD GPU usage. Remove or set to 0 for integrated graphics.
+## Legend / Variables
+
+| Variable | Description |
+|----------|-------------|
+| `PROTON` | Path to the Proton executable you want to use (e.g., `Proton 10.0`). |
+| `GAME_DIR` | Path to your Stardew Valley folder. |
+| `DRI_PRIME` | Optional; set to `1` to enable AMD GPU, `0` for integrated graphics. |
+| `STEAM_COMPAT_DATA_PATH` | Proton compatibility folder for Stardew Valley (AppID 413150). |
+| `STEAM_COMPAT_CLIENT_INSTALL_PATH` | Path to your Steam installation (needed for Proton). |
 
 ⚠️ Do not modify other commands unless you know what you are doing.
 
@@ -62,7 +67,7 @@ DRI_PRIME=1 → optional; enables AMD GPU usage. Remove or set to 0 for integrat
   ./start_smapi_proton.sh
   ```
 
-# Steps:
+### Steps:
 
 1. Open a terminal.
 2. Navigate to the folder with the script.
