@@ -47,8 +47,9 @@ GAME_DIR="$HOME/.local/share/Steam/steamapps/common/Stardew Valley"
   ```
 
 ### GPU (for AMD users, optional)
+  ```bash
 export DRI_PRIME=1
-
+  ```
 ## Legend / Variables
 
 | Variable | Description |
